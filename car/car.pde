@@ -1,14 +1,17 @@
 void setup(){
   size(500, 500);
-  background(81, 169, 222);
+  
+  
 }
 
 int x = 200;
+int speed = 1;
 
 void draw(){
+background(81, 169, 222);
   noStroke();
- fill(22, 185, 70);
- rect(x - 200, 310, 500, 250);
+  fill(22, 185, 70);
+ rect(0, 310, 500, 250);
  fill(135, 142, 137);
  ellipse(x + 30, 320, 90, 20);
  fill(255, 255, 0);
@@ -20,6 +23,6 @@ void draw(){
  fill(81, 169, 222);
  rect(x + 25, 287, 20, 10);
  rect(x + 47, 287, 20, 10);
-
+  x+=speed;
  
 }
